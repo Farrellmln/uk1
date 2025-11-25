@@ -1,0 +1,37 @@
+/* Container untuk foto profil */
+.user-photo-container {
+    /* Mengatur jarak di dalam container */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* Menggunakan flexbox untuk penataan yang lebih baik */
+    display: flex; 
+    justify-content: center; /* Menengahkan secara horizontal */
+    align-items: center; /* Menengahkan secara vertikal */
+}
+
+/* Mengatur tampilan foto profil */
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Membuat foto melingkar */
+    object-fit: cover; /* Memastikan foto tidak terdistorsi */
+    border: 3px solid #fff; /* Border putih */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Mengatasi masalah mepet atas/bawah yang mungkin disebabkan oleh elemen lain */
+.sidebar .sidebar-logo {
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+
+.sidebar .logo-header {
+    justify-content: center;
+    text-align: center;
+}
+
+/* Menghilangkan margin pada elemen nav-toggle yang mungkin mengganggu */
+.sidebar .logo-header .nav-toggle {
+    margin-top: 0;
+    margin-bottom: 0;
+}
